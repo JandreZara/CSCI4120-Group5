@@ -3,7 +3,9 @@
 
 **Members:** 
 
-	Jan Andre Verceles-Zara, Lilah El-Halabi, Chris Bouton
+	Jan Andre Verceles-Zara | verceleszaraj17@students.ecu.edu
+	Lilah El-Halabi | elhalabil18@students.ecu.edu
+	Chris Bouton | boutonc18@students.ecu.edu
   
 **Quick Start Steps:**
 	
