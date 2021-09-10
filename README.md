@@ -9,13 +9,13 @@
   
 **Quick Start Steps:**
 	
-	Step 1: 
-	Step 2: 
-	Step 3:
-	Step 4:
+	Step 1: Use the git clone function accompanied by the repository link that was turned in on Canvas to access CSCI4120-Group5 HW1 files
+	Step 2: Once cloned, run Juypter Notebook and locate the CSCI4120-Group 5 folder that you have cloned and select it to open
+	Step 3: After entering the folder in Jupter Notebook, locate the KNN HW(1) file and open it
+	Step 4: From there you should be able to run the code in the following notebook and view our materials. (Insure that matplotlib is previously installed to view line chart)
 
 **Which K (from 1 to 20) works the best?**
 	
-	If all Ks have similar accuracy, please write down your thoughts about “Why.”
+	K-Value 11 seems to work the best in comparison to other K-Values shown in the line chart. In terms of range, K-Values 3-12 give an optimal reperesenation of best accuracy. 
 
 **Line Chart:**
