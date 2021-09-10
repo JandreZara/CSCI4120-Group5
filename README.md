@@ -16,7 +16,7 @@
 
 **Which K (from 1 to 20) works the best?**
 	
-	K-Value 11 seems to work the best in comparison to other K-Values shown in the line chart. In terms of range, K-Values 3-12 give an optimal reperesenation of best accuracy. 
+	K-Value 10 seems to work the best in comparison to other K-Values shown in the line chart. In terms of range, K-Values 3-12 give an optimal reperesenation of best accuracy. 
 
 **Line Chart:**
 	
