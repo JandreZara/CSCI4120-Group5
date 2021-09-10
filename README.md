@@ -19,3 +19,5 @@
 	K-Value 11 seems to work the best in comparison to other K-Values shown in the line chart. In terms of range, K-Values 3-12 give an optimal reperesenation of best accuracy. 
 
 **Line Chart:**
+	
+<img width="418" alt="Screen Shot 2021-09-10 at 6 15 03 PM" src="https://user-images.githubusercontent.com/43555357/132923231-cf6efff7-530a-4e3e-a663-254a5b648902.png">
