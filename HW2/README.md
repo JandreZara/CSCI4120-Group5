@@ -13,10 +13,12 @@ Run the debugger for the .py file provided
 
 Three is the KMean cluster value that works the best
 
+![](https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW2/Elbow%20Viz.png)
+
 **The best K accuracy:**
 
 Upon multiple tests 3 most often yielded the best accuracy
 
 **Insert a confusion matrix for the best K:**
 
-
+![](https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW2/Confusion%20Matrix.png)
