@@ -22,14 +22,21 @@ visualizer.show()
 
 
 #TODO calculate accuracy for best k
-rand = random.randrange(0,101)
-X_train, X_test, y_train, y_test = train_test_split(x, y_true, test_size = 0.4, random_state= rand)
-k = KNeighborsClassifier()
-k.fit(X_train, y_train)
-predicted = k.predict(X_test)
-print(accuracy_score(y_test,predicted))
+accuracy = []
+for i in range(1,11):
+    rand = random.randrange(0, 101)
+    k = KMeans(n_clusters=i, random_state= rand)
+    k.fit(x, y_true)
+    predicted = k.predict(x)
+    accuracy.append(accuracy_score(y_true,predicted))
 
+print('\n Accuracy per KMean: ' + repr(accuracy))
 
 #TODO draw a confusion matrix
+mat = confusion_matrix (y_true,predicted)
+sns.heatmap(mat.T, square = True, annot = True, fmt = 'd', cbar = False)
+plt.show()
+#plt.xLabel('True Label')
+#plt.yLabel('Predicted Label')
 
-print(confusion_matrix (y_test,predicted))
+print(confusion_matrix (y_true,predicted))
