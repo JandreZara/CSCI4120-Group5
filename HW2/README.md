@@ -21,4 +21,4 @@ Upon multiple tests 3 most often yielded the best accuracy
 
 **Insert a confusion matrix for the best K:**
 
-![](https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW2/Confusion%20Matrix.png)
+![](https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW2/Better%20Confusion%20Matrix.png)
