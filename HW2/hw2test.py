@@ -26,9 +26,8 @@ visualizer.show()
 #TODO calculate accuracy for best k
 
 
-kmeans = KMeans(n_clusters=4, random_state=0)
-clusters = kmeans.fit_predict(x)
-kmeans.cluster_centers_.shape
+clusters = model.fit_predict(x , y_true)
+model.cluster_centers_.shape
 
 labels = np.zeros_like(clusters)
 for i in range(10):
