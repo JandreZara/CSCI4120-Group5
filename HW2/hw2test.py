@@ -25,26 +25,23 @@ visualizer.show()
 
 #TODO calculate accuracy for best k
 
-
-clusters = model.fit_predict(x , y_true)
-model.cluster_centers_.shape
+clusters = visualizer.predict(x)
 
 labels = np.zeros_like(clusters)
 for i in range(10):
-    
+
     mask = (clusters == i)
-    labels[mask] = mode(y_true[mask])[0]
+    labels[mask] = mode(clusters[mask])[0]
 
-accuracy = accuracy_score(y_true , labels)
-
+accuracy = accuracy_score(clusters , labels)
 
 print('\n Accuracy per KMean: ' + repr(accuracy))
 
 #TODO draw a confusion matrix
-mat = confusion_matrix (y_true , labels)
+mat = confusion_matrix (clusters , labels)
 sns.heatmap(mat.T, square = True, annot = True, fmt = 'd', cbar = False)
 plt.show()
 #plt.xLabel('True Label')
 #plt.yLabel('Predicted Label')
 
-print(confusion_matrix (y_true,labels))
+print(confusion_matrix (clusters , labels))
