@@ -9,6 +9,8 @@ from yellowbrick.cluster import KElbowVisualizer
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
+from scipy.spatial.distance import cdist
+from scipy.stats import mode
 
 
 x, y_true = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
@@ -22,21 +24,26 @@ visualizer.show()
 
 
 #TODO calculate accuracy for best k
+
+clusters = visualizer.predict(x)
 accuracy = []
-for i in range(1,11):
-    rand = random.randrange(0, 101)
-    k = KMeans(n_clusters=i, random_state= rand)
-    k.fit(x, y_true)
-    predicted = k.predict(x)
-    accuracy.append(accuracy_score(y_true,predicted))
+labels = np.zeros_like(clusters)
+for i in range(10):
+
+    mask = (clusters == i)
+    labels[mask] = mode(clusters[mask])[0]
+    accuracy.append(accuracy_score(clusters , labels)) 
 
 print('\n Accuracy per KMean: ' + repr(accuracy))
 
 #TODO draw a confusion matrix
-mat = confusion_matrix (y_true,predicted)
+mat = confusion_matrix (clusters , labels)
 sns.heatmap(mat.T, square = True, annot = True, fmt = 'd', cbar = False)
+plt.xlabel('True Label')
+plt.ylabel('Predicted Label')
 plt.show()
-#plt.xLabel('True Label')
-#plt.yLabel('Predicted Label')
 
-print(confusion_matrix (y_true,predicted))
+print("\n")
+print(confusion_matrix (clusters , labels))
+
+
