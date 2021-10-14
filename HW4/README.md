@@ -6,6 +6,7 @@
 
 
 **Results:**
-![]https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW4/HW4%20Results.PNG
+
+![](https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW4/HW4%20Results.PNG)
 
 *The best performing model was the lasso model*
