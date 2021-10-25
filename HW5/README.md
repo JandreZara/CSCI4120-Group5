@@ -8,7 +8,7 @@
   
 **Hyperparameters used**
 
-![]
+	n_estimators and max_features
   
 **Accuracy and (accuracy/number of features)**
 
