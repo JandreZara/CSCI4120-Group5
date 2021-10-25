@@ -12,4 +12,4 @@
   
 **Accuracy and (accuracy/number of features)**
 
-![]https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW5/HW5_Accuracy.PNG
+![](https://github.com/JandreZara/CSCI4120-Group5/blob/main/HW5/HW5_Accuracy.PNG)
